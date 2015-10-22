@@ -4,7 +4,6 @@ using System.Collections;
 
 public class InteractObject : MonoBehaviour {
 	private bool detected;
-	public Text interact;
 	// Use this for initialization
 	void Start () {
 
@@ -15,16 +14,17 @@ public class InteractObject : MonoBehaviour {
 	}
 
 
-	public void UpdateObject(string HitTag)
+	public void UpdateObject(string HitTag, Text interact)
 	{
 		if (HitTag == "Tomb") {
 			GetComponent <TombMovement> ().execute ();
-		} else if (HitTag == "Teleport") {
-			Application.LoadLevel ("HouseA");
-		} else {
+		} 
+		else if (HitTag == "Teleport") {
+			MenuScreen ();
 		}
 	}
 
-
-
+	public void MenuScreen(){
+		Cursor.lockState = CursorLockMode.None;
+	}
 }

@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
-public class SteinHouse : MonoBehaviour {
-
+public class Teleport : MonoBehaviour {
+	public string target_level;
 	// Use this for initialization
 	void Start () {
 	
@@ -11,5 +12,9 @@ public class SteinHouse : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public void teleport(){
+		Application.LoadLevel (target_level);
 	}
 }

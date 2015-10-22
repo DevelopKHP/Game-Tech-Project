@@ -50,6 +50,7 @@
      <Compile Include="Assets\Custom Scripts\InteractObject.cs" />
      <Compile Include="Assets\Custom Scripts\Inventory.cs" />
      <Compile Include="Assets\Custom Scripts\Item.cs" />
+     <Compile Include="Assets\Custom Scripts\Teleport.cs" />
      <Compile Include="Assets\Custom Scripts\TombMovement.cs" />
      <Compile Include="Assets\ResidentialLite\Scripts\Houses.cs" />
      <Compile Include="Assets\ResidentialLite\Scripts\Informer.cs" />
@@ -96,7 +97,6 @@
      <Compile Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
      <Compile Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
-     <Compile Include="Assets\SteinHouse.cs" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
