@@ -18,8 +18,7 @@ public class InteractObject : MonoBehaviour {
 	{
 		if (HitTag == "Tomb") {
 			GetComponent <TombMovement> ().execute ();
-		} 
-		else if (HitTag == "Teleport") {
+		} else if (HitTag == "Teleport") {
 			MenuScreen ();
 		}
 	}

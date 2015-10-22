@@ -26,7 +26,7 @@ public class FirstPersonSelection : MonoBehaviour {
 		Ray r = Camera.main.ScreenPointToRay(new Vector2(Screen.width/2, Screen.height/2));
 		Debug.DrawRay (r.origin, r.direction * rayCastingLength, Color.red); //will see the raycast in scene window
 		if (Physics.Raycast(r, out hit, rayCastingLength)){
-			if (hit.collider.tag == "EventTrigger" || hit.collider.tag == "Tomb" || hit.collider.tag == "Teleport")
+			if (hit.collider.tag == "EventTrigger" || hit.collider.tag == "Tomb" || hit.collider.tag == "Teleport" || hit.collider.tag == "Item")
 			{
 				interact.text = "Press 'E' to interact";
 			}
@@ -41,6 +41,10 @@ public class FirstPersonSelection : MonoBehaviour {
 			if (Physics.Raycast(r, out hit, rayCastingLength)){
 				if (hit.collider.tag == "EventTrigger" || hit.collider.tag == "Tomb" || hit.collider.tag == "Teleport"){
 					hit.collider.GetComponent<InteractObject>().UpdateObject(hit.collider.tag, interact);
+				}
+				else if (hit.collider.tag == "Item"){
+					gameObject.GetComponent<Inventory>().addObject(hit.collider.gameObject);
+					hit.collider.gameObject.SetActive(false);
 				}
 			}
 		}

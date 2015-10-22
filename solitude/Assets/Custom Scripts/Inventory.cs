@@ -7,13 +7,20 @@ public class Inventory : MonoBehaviour {
 	 * 
 	 */
 	public Item[] inventory;
+	private int i;
 	// Use this for initialization
 	void Start () {
 		inventory = new Item[10];
+		i = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public void addObject(GameObject item){
+		inventory [i] = item.GetComponent<Item>();
+		i++;
 	}
 }
