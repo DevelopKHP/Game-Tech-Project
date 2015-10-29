@@ -23,4 +23,20 @@ public class Inventory : MonoBehaviour {
 		inventory [i] = item.GetComponent<Item>();
 		i++;
 	}
+
+	public void showItems()
+	{
+		for (int a = 0; a < 10; a++) {
+			inventory [i].gameObject.SetActive(true);
+		}
+		gameObject.GetComponentInParent<Inventory> ().enabled = false;
+	}
+
+	public void exitInventory()
+	{
+		for (int a = 0; a < 10; a++) {
+			inventory [i].gameObject.SetActive(false);
+		}
+		gameObject.GetComponentInParent<Inventory> ().enabled = true;
+	}
 }

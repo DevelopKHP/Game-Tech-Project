@@ -27,7 +27,7 @@ public class FirstPersonSelection : MonoBehaviour {
 		Ray r = Camera.main.ScreenPointToRay(new Vector2(Screen.width/2, Screen.height/2));
 		Debug.DrawRay (r.origin, r.direction * rayCastingLength, Color.red); //will see the raycast in scene window
 		if (Physics.Raycast(r, out hit, rayCastingLength)){
-			if (hit.collider.tag == "EventTrigger" || hit.collider.tag == "Tomb" || hit.collider.tag == "Teleport" || hit.collider.tag == "Item")
+			if (hit.collider.tag == "Tomb" || hit.collider.tag == "Teleport" || hit.collider.tag == "Item")
 			{
 				interact.text = "Press 'E' to interact";
 			}

@@ -25,6 +25,7 @@ public class InteractObject : MonoBehaviour {
 
 	public void MenuScreen(){
 		Cursor.lockState = CursorLockMode.None;
+		Cursor.visible = true;
 		gameObject.GetComponent<Door> ().toggleVisibility (true);
 	}
 }
