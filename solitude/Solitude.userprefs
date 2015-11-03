@@ -1,12 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\VectorQuat_lab\Assets\Lab Scripts\MissleControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Custom Scripts\Inventory.cs">
     <Files>
-      <File FileName="..\..\VectorQuat_lab\Assets\Lab Scripts\TurretAim_solution.cs" Line="34" Column="3" />
-      <File FileName="..\..\VectorQuat_lab\Assets\Lab Scripts\TurretAim.cs" Line="34" Column="1" />
-      <File FileName="..\..\VectorQuat_lab\Assets\Lab Scripts\MissleControl.cs" Line="27" Column="2" />
-      <File FileName="..\..\VectorQuat_lab\Assets\Lab Scripts\MissleControl_solution.cs" Line="38" Column="6" />
-      <File FileName="..\..\VectorQuat_lab\Assets\OtherScripts\missle_control_base.cs" Line="6" Column="1" />
+      <File FileName="Assets\Custom Scripts\Inventory.cs" Line="45" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
