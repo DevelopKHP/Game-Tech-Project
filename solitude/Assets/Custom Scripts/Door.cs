@@ -16,9 +16,14 @@ public class Door : MonoBehaviour {
 	}
 
 	public void toggleVisibility(bool visible){
-		Hospital.image.enabled = visible;
-		Hospital.GetComponentInChildren<Text> ().enabled = visible;
-		House.image.enabled = visible;
-		House.GetComponentInChildren<Text> ().enabled = visible;
+		string name = Application.loadedLevelName;
+		if (Hospital.name != name) {
+			Hospital.image.enabled = visible;
+			Hospital.GetComponentInChildren<Text> ().enabled = visible;
+		}
+		if (House.name != name) {
+			House.image.enabled = visible;
+			House.GetComponentInChildren<Text> ().enabled = visible;
+		}
 	}
 }

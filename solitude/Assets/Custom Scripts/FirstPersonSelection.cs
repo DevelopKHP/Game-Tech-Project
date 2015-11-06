@@ -44,7 +44,7 @@ public class FirstPersonSelection : MonoBehaviour {
 					if(hit.collider.tag == "Teleport"){
 						gameObject.GetComponentInParent<FirstPersonController>().enabled = false;
 					}
-					hit.collider.GetComponent<InteractObject>().UpdateObject(hit.collider.tag, interact);
+					hit.collider.GetComponent<InteractObject>().UpdateObject(hit.collider.tag, interact, gameObject);
 				}
 				else if (hit.collider.tag == "Item"){
 					gameObject.GetComponent<Inventory>().addObject(hit.collider.gameObject);

@@ -14,10 +14,10 @@ public class InteractObject : MonoBehaviour {
 	}
 
 
-	public void UpdateObject(string HitTag, Text interact)
+	public void UpdateObject(string HitTag, Text interact, GameObject player)
 	{
 		if (HitTag == "Tomb") {
-			GetComponent <TombMovement> ().execute ();
+			GetComponent <TombMovement> ().execute (player);
 		} else if (HitTag == "Teleport") {
 			MenuScreen ();
 		}
