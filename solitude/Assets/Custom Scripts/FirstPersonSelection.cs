@@ -28,11 +28,15 @@ public class FirstPersonSelection : MonoBehaviour {
 		Debug.DrawRay (r.origin, r.direction * rayCastingLength, Color.red); //will see the raycast in scene window
 		interact.text = "";
 		if (Physics.Raycast(r, out hit, rayCastingLength)){
-			if (hit.collider.tag == "Tomb" || hit.collider.tag == "Teleport" || hit.collider.tag == "Item")
+			if (hit.collider.tag == "Tomb" || hit.collider.tag == "Teleport")
 			{
-				interact.text = "Press 'E' to interact";
+				interact.text = "Interact (E)";
 			}
 
+			else if( hit.collider.tag == "Item")
+			{
+				interact.text = "Pick up (E)";
+			}
 			else
 			{
 				interact.text = "";
@@ -53,7 +57,6 @@ public class FirstPersonSelection : MonoBehaviour {
 				}
 			}
 		}
-
-
 	}
 }
+
