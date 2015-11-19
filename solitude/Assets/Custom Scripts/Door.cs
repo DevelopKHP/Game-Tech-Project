@@ -24,11 +24,11 @@ public class Door : MonoBehaviour {
 			House.image.enabled = visible;
 			House.GetComponentInChildren<Text> ().enabled = visible;
 		}
-		if ("CemetaryDay" != name || "CemetaryNight" != name) {
+		if ("CemetaryDay" != name && "CemetaryNight" != name) {
 			Cemetery.image.enabled = visible;
 			Cemetery.GetComponentInChildren<Text> ().enabled = visible;
 		}
-		if ("SchoolDay" != name || "SchoolNight" != name) {
+		if ("SchoolDay" != name && "SchoolNight" != name) {
 			School.image.enabled = visible;
 			School.GetComponentInChildren<Text> ().enabled = visible;
 		}
