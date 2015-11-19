@@ -20,19 +20,19 @@ public class Door : MonoBehaviour {
 	public void toggleVisibility(bool visible){
 		string name = Application.loadedLevelName;
 
-		if (House.name != name) {
+		if ("HouseDownstairs" != name) {
 			House.image.enabled = visible;
 			House.GetComponentInChildren<Text> ().enabled = visible;
 		}
-		if (Cemetery.name != name) {
+		if ("CemetaryDay" != name || "CemetaryNight" != name) {
 			Cemetery.image.enabled = visible;
 			Cemetery.GetComponentInChildren<Text> ().enabled = visible;
 		}
-		if (School.name != name) {
+		if ("SchoolDay" != name || "SchoolNight" != name) {
 			School.image.enabled = visible;
 			School.GetComponentInChildren<Text> ().enabled = visible;
 		}
-		if (Hospital_lobby.name != name) {
+		if ("HospitalLobby" != name) {
 			Hospital_lobby.image.enabled = visible;
 			Hospital_lobby.GetComponentInChildren<Text> ().enabled = visible;
 		}

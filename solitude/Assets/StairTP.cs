@@ -3,6 +3,7 @@ using System.Collections;
 
 public class StairTP : MonoBehaviour {
 
+	public string target_level;
 	// Use this for initialization
 	void Start () {
 	
@@ -13,9 +14,8 @@ public class StairTP : MonoBehaviour {
 	
 	}
 
-	void OnCollision(Collision collision){
-		foreach (ContactPoint contact in collision.contacts){
-			Debug.Log ("Stairs");
-		}
-	}	
+	public void OnTriggerEnter(Collider other)
+	{
+			Application.LoadLevel (target_level);
+	}
 }
