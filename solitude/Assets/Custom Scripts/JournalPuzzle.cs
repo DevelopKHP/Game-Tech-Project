@@ -12,7 +12,6 @@ public class JournalPuzzle : MonoBehaviour {
 	// Update is called once per frame
 	void Update (){
 		inputJ.text = inputJ.text.ToLower ();
-		Debug.Log (inputJ.text);
 		if (inputJ.text == "look under my bed") {
 			Debug.Log("Good Job");
 		}
