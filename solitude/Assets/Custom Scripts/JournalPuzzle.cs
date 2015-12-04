@@ -16,6 +16,7 @@ public class JournalPuzzle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update (){
+<<<<<<< HEAD
 		string answer = inputJ.text.ToLower ();
 		if (answer == "look under my bed") {
 			if(Input.GetKeyDown(KeyCode.Return)){
@@ -26,6 +27,11 @@ public class JournalPuzzle : MonoBehaviour {
 				player.gameObject.GetComponentInParent<FirstPersonController> ().enabled = true;
 				StartCoroutine(MyCoroutine());
 			}
+=======
+		inputJ.text = inputJ.text.ToLower ();
+		if (inputJ.text == "look under my bed") {
+			Debug.Log("Good Job");
+>>>>>>> bd4ed7e3f7c74f93b2a1d0ebe586dbe2c8ea3814
 		}
 	}
 

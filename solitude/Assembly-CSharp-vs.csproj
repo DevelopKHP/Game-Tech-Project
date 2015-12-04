@@ -103,8 +103,11 @@
      <Compile Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
      <Compile Include="Assets\StairTP.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\TriggerScript.cs" />
      <Compile Include="Assets\npc_script.cs" />
+=======
+>>>>>>> bd4ed7e3f7c74f93b2a1d0ebe586dbe2c8ea3814
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
@@ -188,9 +191,6 @@
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="LitJson">
- <HintPath>C:/Users/Kyle/Desktop/Repository/solitude/Assets/UMA/Example/DLL/LitJson.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
