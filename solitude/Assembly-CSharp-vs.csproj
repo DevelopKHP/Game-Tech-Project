@@ -103,11 +103,8 @@
      <Compile Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
      <Compile Include="Assets\StairTP.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\TriggerScript.cs" />
      <Compile Include="Assets\npc_script.cs" />
-=======
->>>>>>> bd4ed7e3f7c74f93b2a1d0ebe586dbe2c8ea3814
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
@@ -136,7 +133,6 @@
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
-     <None Include="Assets\Standard Assets\UMA\Core\Atlas\AtlasShader.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
@@ -146,7 +142,6 @@
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
-     <None Include="Assets\Standard Assets\UMA\Core\Atlas\AtlasNormalShader.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
