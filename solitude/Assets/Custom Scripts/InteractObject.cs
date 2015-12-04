@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class InteractObject : MonoBehaviour {
 	private bool detected;
+	public Image fJournal;
 	// Use this for initialization
 	void Start () {
 
@@ -20,6 +22,14 @@ public class InteractObject : MonoBehaviour {
 			GetComponent <TombMovement> ().execute (player);
 		} else if (HitTag == "Teleport") {
 			MenuScreen ();
+		} else if (HitTag == "Journal") {
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
+			player.gameObject.GetComponentInParent<FirstPersonController> ().enabled = false;
+			fJournal.gameObject.SetActive (true);
+		} else if (HitTag == "NPC") {
+			GetComponent<AudioSource>().Play();
+
 		}
 	}
 

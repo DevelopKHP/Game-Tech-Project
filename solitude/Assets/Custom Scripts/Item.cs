@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Item : MonoBehaviour {
 	public string itemName;
+	public bool pickable;
 	// Use this for initialization
 	void Start () {
 	

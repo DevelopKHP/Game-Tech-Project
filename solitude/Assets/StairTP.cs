@@ -4,6 +4,7 @@ using System.Collections;
 public class StairTP : MonoBehaviour {
 
 	public string target_level;
+	public GameObject player;
 	// Use this for initialization
 	void Start () {
 	
@@ -16,6 +17,12 @@ public class StairTP : MonoBehaviour {
 
 	public void OnTriggerEnter(Collider other)
 	{
-			Application.LoadLevel (target_level);
+		Debug.Log (target_level);
+		if (target_level == "HouseDownstairs") {
+			player.transform.position = new Vector3 (76, 1, 172);
+		}
+		else if (target_level == "HouseUpstairs") {
+			player.transform.position = new Vector3 (29, 1, 176);
+		}
 	}
 }

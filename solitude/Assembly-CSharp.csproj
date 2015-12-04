@@ -51,8 +51,12 @@
      <Compile Include="Assets\Custom Scripts\InteractObject.cs" />
      <Compile Include="Assets\Custom Scripts\Inventory.cs" />
      <Compile Include="Assets\Custom Scripts\Item.cs" />
+     <Compile Include="Assets\Custom Scripts\JournalPuzzle.cs" />
      <Compile Include="Assets\Custom Scripts\Teleport.cs" />
      <Compile Include="Assets\Custom Scripts\TombMovement.cs" />
+     <Compile Include="Assets\Cutscenes\RosaryInteract.cs" />
+     <Compile Include="Assets\Cutscenes\Scene_Intro.cs" />
+     <Compile Include="Assets\FireEndTrigger.cs" />
      <Compile Include="Assets\ResidentialLite\Scripts\Houses.cs" />
      <Compile Include="Assets\ResidentialLite\Scripts\Informer.cs" />
      <Compile Include="Assets\ResidentialLite\Scripts\Interaction.cs" />
@@ -99,6 +103,8 @@
      <Compile Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
      <Compile Include="Assets\StairTP.cs" />
+     <Compile Include="Assets\TriggerScript.cs" />
+     <Compile Include="Assets\npc_script.cs" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
@@ -127,6 +133,7 @@
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+     <None Include="Assets\Standard Assets\UMA\Core\Atlas\AtlasShader.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
@@ -136,6 +143,7 @@
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\Standard Assets\UMA\Core\Atlas\AtlasNormalShader.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
@@ -180,6 +188,9 @@
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>C:/Users/Kyle/Desktop/Repository/solitude/Assets/UMA/Example/DLL/LitJson.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
