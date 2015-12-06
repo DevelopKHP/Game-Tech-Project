@@ -6,13 +6,10 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class Teleport : MonoBehaviour {
 	public string target_level;
 	public GameObject player;
-	public GameObject canvas;
-	public GameObject items;
 	public Button House;
 	public Button Hospital_lobby;
 	public Button Cemetery;
 	public Button School;
-	public GameObject TP;
 	// Use this for initialization
 	void Start () {
 	
@@ -25,9 +22,18 @@ public class Teleport : MonoBehaviour {
 
 	public void teleport(){
 		if (target_level == "House") {
-			player.transform.position = new Vector3((float)(0.25),1,(float)(0.35));
+			player.transform.position = new Vector3(81,2,162);
+		} 
+		else if (target_level == "Hospital Lobby") {
+			player.transform.position = new Vector3(77,2,416);
 		}
-		player.transform.position = new Vector3(81,2,162);
+		else if (target_level == "Cemetery"){
+			player.transform.position = new Vector3(249,2,131);
+		}
+		else if (target_level == "School"){
+			player.transform.position = new Vector3(93,2,458);
+		}
+
 		player.gameObject.GetComponentInParent<FirstPersonController>().enabled = true;
 		House.image.enabled = false;
 		House.GetComponentInChildren<Text> ().enabled = false;
@@ -37,10 +43,8 @@ public class Teleport : MonoBehaviour {
 		Cemetery.GetComponentInChildren<Text> ().enabled = false;
 		School.image.enabled = false;
 		School.GetComponentInChildren<Text> ().enabled = false;
-		DontDestroyOnLoad (player);
-		DontDestroyOnLoad (canvas);
-		DontDestroyOnLoad (items);
-		DontDestroyOnLoad (TP);
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
 
 	
 

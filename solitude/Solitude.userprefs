@@ -1,9 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Custom Scripts\JournalPuzzle.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Custom Scripts\FirstPersonSelection.cs">
     <Files>
-      <File FileName="Assets\Standard Assets\UMA\Core\Scripts\UMAUtils.cs" Line="1" Column="1" />
-      <File FileName="Assets\Custom Scripts\JournalPuzzle.cs" Line="1" Column="1" />
+      <File FileName="Assets\Custom Scripts\LockerTP.cs" Line="17" Column="53" />
+      <File FileName="Assets\Custom Scripts\StairTP.cs" Line="20" Column="1" />
+      <File FileName="Assets\Custom Scripts\InteractObject.cs" Line="29" Column="22" />
+      <File FileName="Assets\Custom Scripts\FirstPersonSelection.cs" Line="86" Column="68" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

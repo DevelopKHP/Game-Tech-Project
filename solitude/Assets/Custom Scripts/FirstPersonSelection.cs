@@ -12,11 +12,17 @@ public class FirstPersonSelection : MonoBehaviour {
 	public float rayCastingLength;
 	public Text interact;
 	public GameObject JPuz;
+	private bool puzzle1;
+	private bool puzzle2;
+	private bool puzzle3;
 	
 	// Use this for initialization
 	void Start () {
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
+		puzzle1 = false;
+		puzzle2 = false;
+		puzzle3 = false;
 		//default values
 	}
 
@@ -33,12 +39,19 @@ public class FirstPersonSelection : MonoBehaviour {
 		Debug.DrawRay (r.origin, r.direction * rayCastingLength, Color.red); //will see the raycast in scene window
 		interact.text = "";
 		if (Physics.Raycast(r, out hit, rayCastingLength)){
-			if (hit.collider.tag == "Tomb" || hit.collider.tag == "Teleport")
+			if (hit.collider.tag == "Tomb" || hit.collider.tag == "Locker")
 			{
 				interact.text = "Interact (E)";
 			}
 
-			else if( hit.collider.tag == "Item")
+			else if (hit.collider.tag == "Teleport")
+			{
+				if (puzzle1 == true){
+					interact.text = "Interact (E)";
+				}
+			}
+				
+				else if(hit.collider.tag == "Item")
 			{
 				if (hit.collider.gameObject.GetComponent<Item>().pickable)
 					interact.text = "Pick up (E)";
@@ -51,11 +64,15 @@ public class FirstPersonSelection : MonoBehaviour {
 				{
 					if(gameObject.GetComponent<Inventory>().inventory[i].itemName == "Note")
 					{
-						Debug.Log(gameObject.GetComponent<Inventory>().inventory[i].itemName);
 						interact.text = "Interact (E)";
 						break;
 					}
-
+				}
+			}
+			else if (hit.collider.tag == "Bed"){
+				if(puzzle2 == true)
+				{
+					interact.text = "Interact (E)";
 				}
 			}
 			else
@@ -66,11 +83,17 @@ public class FirstPersonSelection : MonoBehaviour {
 
 		if (Input.GetKeyDown(KeyCode.E)) { //value 0 is left mouse button
 			if (Physics.Raycast(r, out hit, rayCastingLength)){
-				if ( hit.collider.tag == "Tomb" || hit.collider.tag == "Teleport" || hit.collider.tag == "NPC"){
-					if(hit.collider.tag == "Teleport"){
+				if ( hit.collider.tag == "Tomb" || hit.collider.tag == "NPC" || hit.collider.tag == "Locker")
+				{
+					hit.collider.GetComponent<InteractObject>().UpdateObject(hit.collider, interact, gameObject);
+				}
+				else if (hit.collider.tag == "Teleport")
+				{
+					if (puzzle1 == true)
+					{
 						gameObject.GetComponentInParent<FirstPersonController>().enabled = false;
+						hit.collider.GetComponent<InteractObject>().UpdateObject(hit.collider, interact, gameObject);
 					}
-					hit.collider.GetComponent<InteractObject>().UpdateObject(hit.collider.tag, interact, gameObject);
 				}
 				else if (hit.collider.tag == "Item"){
 					if (hit.collider.gameObject.GetComponent<Item>().pickable){
@@ -83,13 +106,33 @@ public class FirstPersonSelection : MonoBehaviour {
 					{
 						if(gameObject.GetComponent<Inventory>().inventory[i].itemName == "Note")
 						{
-							Debug.Log(gameObject.GetComponent<Inventory>().inventory[i].itemName);
-							hit.collider.GetComponent<InteractObject>().UpdateObject(hit.collider.tag, interact, gameObject);
+							hit.collider.GetComponent<InteractObject>().UpdateObject(hit.collider, interact, gameObject);
+							break;
+						}	
+					}
+				}
+				else if (hit.collider.tag == "Bed"){
+					for (int i = 0; i < 5; i++)
+					{
+						if(puzzle2 == true)
+						{
+							hit.collider.GetComponent<InteractObject>().UpdateObject(hit.collider, interact, gameObject);
 							break;
 						}
 					}
 				}
 			}
+		}
+	}
+	public void finishedPuzzle(string puzzle){
+		if (puzzle == "Rosary") {
+			puzzle1 = true;
+		}
+		if (puzzle == "Journal") {
+			puzzle2 = true;
+		}
+		if (puzzle == "Locker") {
+			puzzle3 = true;
 		}
 	}
 }

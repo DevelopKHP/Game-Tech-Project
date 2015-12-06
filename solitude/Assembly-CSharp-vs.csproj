@@ -47,16 +47,25 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Custom Scripts\Door.cs" />
+     <Compile Include="Assets\Custom Scripts\FireEndTrigger.cs" />
      <Compile Include="Assets\Custom Scripts\FirstPersonSelection.cs" />
      <Compile Include="Assets\Custom Scripts\InteractObject.cs" />
      <Compile Include="Assets\Custom Scripts\Inventory.cs" />
      <Compile Include="Assets\Custom Scripts\Item.cs" />
      <Compile Include="Assets\Custom Scripts\JournalPuzzle.cs" />
+     <Compile Include="Assets\Custom Scripts\Locker\highlight1.cs" />
+     <Compile Include="Assets\Custom Scripts\Locker\highlight2.cs" />
+     <Compile Include="Assets\Custom Scripts\Locker\highlight3.cs" />
+     <Compile Include="Assets\Custom Scripts\Locker\highlight4.cs" />
+     <Compile Include="Assets\Custom Scripts\Locker\highlight5.cs" />
+     <Compile Include="Assets\Custom Scripts\Locker\open.cs" />
+     <Compile Include="Assets\Custom Scripts\LockerTP.cs" />
+     <Compile Include="Assets\Custom Scripts\StairTP.cs" />
      <Compile Include="Assets\Custom Scripts\Teleport.cs" />
      <Compile Include="Assets\Custom Scripts\TombMovement.cs" />
+     <Compile Include="Assets\Custom Scripts\npc_script.cs" />
      <Compile Include="Assets\Cutscenes\RosaryInteract.cs" />
      <Compile Include="Assets\Cutscenes\Scene_Intro.cs" />
-     <Compile Include="Assets\FireEndTrigger.cs" />
      <Compile Include="Assets\ResidentialLite\Scripts\Houses.cs" />
      <Compile Include="Assets\ResidentialLite\Scripts\Informer.cs" />
      <Compile Include="Assets\ResidentialLite\Scripts\Interaction.cs" />
@@ -102,9 +111,6 @@
      <Compile Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
      <Compile Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
-     <Compile Include="Assets\StairTP.cs" />
-     <Compile Include="Assets\TriggerScript.cs" />
-     <Compile Include="Assets\npc_script.cs" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
@@ -128,6 +134,7 @@
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+     <None Include="Assets\10+1 StandartMaterials\Shaders\Shader2.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
@@ -147,6 +154,7 @@
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\10+1 StandartMaterials\Shaders\Shader1.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\ResidentialLite\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />

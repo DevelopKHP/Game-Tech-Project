@@ -4,7 +4,7 @@ using System.Collections;
 public class TombMovement : MonoBehaviour {
 	public AudioClip voice;
 	// Use this for initialization
-	private bool flag = false;
+	//private bool flag = false;
 	void Start () {
 	
 	}

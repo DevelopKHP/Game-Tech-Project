@@ -25,6 +25,7 @@ public class JournalPuzzle : MonoBehaviour {
 				fire.SetActive (true);
 				player.gameObject.GetComponentInParent<FirstPersonController> ().enabled = true;
 				StartCoroutine (MyCoroutine ());
+				puzzleDone();
 			}
 		}
 	}
@@ -34,4 +35,9 @@ public class JournalPuzzle : MonoBehaviour {
 		gameObject.SetActive(false);
 	}
 
+	private void puzzleDone()
+	{
+		player.gameObject.GetComponentInChildren<FirstPersonSelection>().finishedPuzzle("Journal");
+	}
+	
 }
