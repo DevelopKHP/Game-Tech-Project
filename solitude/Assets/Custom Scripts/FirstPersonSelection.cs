@@ -15,6 +15,7 @@ public class FirstPersonSelection : MonoBehaviour {
 	private bool puzzle1;
 	private bool puzzle2;
 	private bool puzzle3;
+	private bool one_time;
 	
 	// Use this for initialization
 	void Start () {
@@ -23,12 +24,13 @@ public class FirstPersonSelection : MonoBehaviour {
 		puzzle1 = false;
 		puzzle2 = false;
 		puzzle3 = false;
+		one_time = false;
 		//default values
 	}
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Escape)) { 
+		if (Input.GetKeyDown (KeyCode.Escape) && JPuz.activeSelf == true) { 
 			gameObject.GetComponentInParent<FirstPersonController>().enabled = true;
 			Cursor.lockState = CursorLockMode.Locked;
 			Cursor.visible = false;
@@ -112,13 +114,14 @@ public class FirstPersonSelection : MonoBehaviour {
 					}
 				}
 				else if (hit.collider.tag == "Bed"){
-					for (int i = 0; i < 5; i++)
+					if(puzzle2 == true && one_time == false)
 					{
-						if(puzzle2 == true)
-						{
-							hit.collider.GetComponent<InteractObject>().UpdateObject(hit.collider, interact, gameObject);
-							break;
-						}
+						GameObject flag = new GameObject();
+						flag = Instantiate(flag);
+						flag.AddComponent<Item>();
+						flag.GetComponent<Item>().itemName = "Flag";
+						gameObject.GetComponent<Inventory>().addObject(flag);
+						one_time = true;
 					}
 				}
 			}

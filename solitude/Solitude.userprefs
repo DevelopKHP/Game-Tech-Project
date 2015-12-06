@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Custom Scripts\FirstPersonSelection.cs">
     <Files>
-      <File FileName="Assets\Custom Scripts\LockerTP.cs" Line="17" Column="53" />
-      <File FileName="Assets\Custom Scripts\StairTP.cs" Line="20" Column="1" />
-      <File FileName="Assets\Custom Scripts\InteractObject.cs" Line="29" Column="22" />
-      <File FileName="Assets\Custom Scripts\FirstPersonSelection.cs" Line="86" Column="68" />
+      <File FileName="Assets\Custom Scripts\InteractObject.cs" Line="30" Column="5" />
+      <File FileName="Assets\Custom Scripts\FirstPersonSelection.cs" Line="122" Column="41" />
+      <File FileName="Assets\Custom Scripts\Inventory.cs" Line="53" Column="13" />
+      <File FileName="Assets\Custom Scripts\Item.cs" Line="5" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

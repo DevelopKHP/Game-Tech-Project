@@ -37,9 +37,6 @@ public class InteractObject : MonoBehaviour {
 		else if (HitTag.tag == "NPC") {
 			GetComponent<AudioSource> ().Play ();
 		} 
-		else if (HitTag.tag == "Bed") {
-			Debug.Log("Bed");
-		}
 	}
 
 	public void MenuScreen(Collider hit){

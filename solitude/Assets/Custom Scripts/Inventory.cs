@@ -48,7 +48,10 @@ public class Inventory : MonoBehaviour {
 				Cursor.visible = true;
 				panel.SetActive (!panel.activeSelf);
 				key = false;
-				for (int a = 0; a < 10; a++){
+				for (int a = 0; a < 5; a++){
+					if (inventory[a] == null){
+						break;
+					}
 					if (inventory[a].itemName == Rosary.name)
 					{
 						Rosary.SetActive(true);
@@ -76,12 +79,14 @@ public class Inventory : MonoBehaviour {
 	}
 	
 	public void addObject(GameObject item){
+		Debug.Log (i);
 		inventory [i] = item.GetComponent<Item>();
 		if (inventory [i].itemName == "Rosary") {
 			puzzleDone();
+			StartCoroutine (flash ());
 		}
 		i++;
-		StartCoroutine (flash ());
+
 	}
 
 	IEnumerator flash()
